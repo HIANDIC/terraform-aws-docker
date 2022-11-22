@@ -13,16 +13,19 @@ variable "key_name" {
 variable "number_of_intance" {
     type = number
     default = 1  
+    description = "default value is 1. But you can choose your own number of instances"
 }
 
 variable "tag" {
     type = string
     default = "Docker-Instance"  
+    description = "here you can enter your tag"
 }
 
 variable "server_name" {
     type = string
     default = "docker-instance"  
+    description = "here you can enter the name of your server"
 }
 
 variable "docker_instance_ports" {
